@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
+  background-color: #2f607441;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  width: 100%;
+  max-width: 42rem;
+  background-color: #777;
+  margin: 4rem auto 2rem;
+  padding: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 7rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+  width: 76%;
+  background-color: transparent;
+  border: solid 1px #979797;
+  outline: none;
+  padding: 1rem 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+input::placeholder {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+button {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  margin-left: 0.1rem;
+  font-size: 1.4rem;
+  background-color: #979797;
+  cursor: pointer;
+  /* border-radius: 0.3rem; */
+}
+
+p {
+  margin: 0.5rem 0rem;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  position: relative;
+}
+
+.fa-trash {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 20%;
+  right: 38.5%;
+}
+
+.fa-pen-to-square {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 20%;
+  right: 40%;
+}
+
+@media (max-width: 40rem) {
+  .nav_content {
+    top: 13%;
+    gap: 20rem;
   }
 }
